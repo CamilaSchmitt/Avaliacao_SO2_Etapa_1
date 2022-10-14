@@ -8,8 +8,9 @@ import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 
 /**
- *
+ * Classe ControleSaida
  * @author camila.soares
+ * @author anita.nunes
  */
 public class ControleSaida extends Thread {
 
@@ -17,12 +18,22 @@ public class ControleSaida extends Thread {
     private Semaphore mutex;
     private Semaphore c;
 
+/**
+  * Construtor da classe ControleSaida que serve para inicializar 
+  * os atributos 
+ */
     ControleSaida(Vagas vaga, Semaphore mutex, Semaphore controle) {
         this.vagas = vaga;
         this.mutex = mutex;
         this.c = controle;
     }
 
+/**
+   * Método herdado de Thread que chama o método EstacionarCarro.
+   * Serve para controlar o tempo de pausa entre a saida de um carro 
+   * e outro, também é importante lembrar que caso todas as vagas tenham
+   * sido preenchidas o método não e utilizado.
+ */
     @Override
     public void run() {
 
