@@ -5,8 +5,10 @@
 package estacione_bem;
 
 /**
- *
+ *Classe Vagas, ela é responsável por controlar todo o processo, pode-se dizer que ela é a classe base
+ *do programa. Possui dois atributo do tipo int: totalVagas e vagasOcupadas.
  * @author camila.soares
+ * @author anita.nunes
  */
 public class Vagas {
     int totalVagas;
@@ -21,6 +23,11 @@ public class Vagas {
         return this.totalVagas;
     }
     
+/**
+ *Serve para controlar o estacionamento de carros, se as vagas ocupadas forem menores que 
+ *o número total de vagas disponivel então há espaço, senão o estacionamento está vazio.
+ * @author camila.soares
+ */
     public void EstacionaCarro() {
         
         if (this.vagasOcupadas < getTotal())
@@ -36,6 +43,11 @@ public class Vagas {
 		}
 	}
 
+/**
+ *Serve para controlar a saida de carros, se as vagas ocupadas forem maiores que 
+ *0, então ainda há vagas para serem desocupadas, senão o estacionamento está vazio.
+ * @author camila.soares
+ */
     public void SaindoCarro() {
         
         if(this.vagasOcupadas > 0) 
