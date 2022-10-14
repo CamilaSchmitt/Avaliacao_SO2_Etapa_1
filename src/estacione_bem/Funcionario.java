@@ -5,8 +5,9 @@
 package estacione_bem;
 
 /**
- *
+ * Classe Funcionario
  * @author camila.soares
+ * @author anita.nunes
  */
 public class Funcionario {
     
