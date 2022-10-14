@@ -7,8 +7,9 @@ package estacione_bem;
 import java.util.concurrent.Semaphore;
 
 /**
- *
+ * Classe ControleEntrada
  * @author camila.soares
+ * @author anita.nunes
  */
 public class ControleEntrada extends Thread{
     
