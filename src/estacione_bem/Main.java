@@ -7,11 +7,18 @@ package estacione_bem;
 import java.util.concurrent.Semaphore;
 
 /**
- *
+ *Um semáforo é uma estrutura de dados que controle o acesso de aplicações aos recursos, 
+ *baseando-se em um número inteiro, que representa a quantidade de acessos que podem ser 
+ *feitos. Assim utilizamos semáforos para controlar a quantidade de acesso a determinado 
+ *recurso.
  * @author camila.soares
+ * @author anita.nunes
  */
 public class Main {
-    
+    /**
+    *Estrutura main, possui atributos do tipo Semaphore, também é responsável por dar start
+    *no controleEntrada e controleSaida. 
+    */
     public static void main(String[] args) {
         
         Funcionario funcionario = new Funcionario();
